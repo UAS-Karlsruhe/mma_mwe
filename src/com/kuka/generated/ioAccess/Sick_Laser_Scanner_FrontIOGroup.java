@@ -29,10 +29,10 @@ public class Sick_Laser_Scanner_FrontIOGroup extends AbstractIOGroup
 	{
 		super(controller, "Sick_Laser_Scanner_Front");
 
-		addInput("B_sick_trigger_schutzfeld", IOTypes.BOOLEAN, 1);
+		addMockedInput("B_sick_trigger_schutzfeld", IOTypes.BOOLEAN, 1, false);
 		addInput("A_sick_trigger_warnfeld", IOTypes.BOOLEAN, 1);
 		addInput("A_sick_trigger_schutzfeld", IOTypes.BOOLEAN, 1);
-		addInput("B_sick_trigger_warnfeld", IOTypes.BOOLEAN, 1);
+		addMockedInput("B_sick_trigger_warnfeld", IOTypes.BOOLEAN, 1, false);
 	}
 
 	/**
@@ -49,10 +49,37 @@ public class Sick_Laser_Scanner_FrontIOGroup extends AbstractIOGroup
 	 * [false; true]
 	 *
 	 * @return current value of the digital input 'B_sick_trigger_schutzfeld'
+	* 
+	 * @deprecated The output 'B_sick_trigger_schutzfeld' has not been assigned to a field bus address - thus this operation will be <b>simulated</b> only.
 	 */
+	@Deprecated
 	public boolean getB_sick_trigger_schutzfeld()
 	{
 		return getBooleanIOValue("B_sick_trigger_schutzfeld", false);
+	}
+
+	/**
+	 * Sets the value of the <b>mocked digital input '<i>B_sick_trigger_schutzfeld</i>'</b>.<br>
+	 * <i>This method is automatically generated. Please, do not modify!</i>
+	 * <p>
+	 * <b>I/O direction and type:</b><br>
+	 * digital input
+	 * <p>
+	 * <b>User description of the I/O:</b><br>
+	 * True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 
+	 * <p>
+	 * <b>Range of the I/O value:</b><br>
+	 * [false; true]
+	 *
+	 * @param value
+	 *            the value, which has to be written to the mocked digital input 'B_sick_trigger_schutzfeld'
+	* 
+	 * @deprecated The output 'B_sick_trigger_schutzfeld' has not been assigned to a field bus address - thus this operation will be <b>simulated</b> only.
+	 */
+	@Deprecated
+	public void setMockedB_sick_trigger_schutzfeldValue(java.lang.Boolean value)
+	{
+		setMockedInput("B_sick_trigger_schutzfeld", value);
 	}
 
 	/**
@@ -109,10 +136,37 @@ public class Sick_Laser_Scanner_FrontIOGroup extends AbstractIOGroup
 	 * [false; true]
 	 *
 	 * @return current value of the digital input 'B_sick_trigger_warnfeld'
+	* 
+	 * @deprecated The output 'B_sick_trigger_warnfeld' has not been assigned to a field bus address - thus this operation will be <b>simulated</b> only.
 	 */
+	@Deprecated
 	public boolean getB_sick_trigger_warnfeld()
 	{
 		return getBooleanIOValue("B_sick_trigger_warnfeld", false);
+	}
+
+	/**
+	 * Sets the value of the <b>mocked digital input '<i>B_sick_trigger_warnfeld</i>'</b>.<br>
+	 * <i>This method is automatically generated. Please, do not modify!</i>
+	 * <p>
+	 * <b>I/O direction and type:</b><br>
+	 * digital input
+	 * <p>
+	 * <b>User description of the I/O:</b><br>
+	 * True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 
+	 * <p>
+	 * <b>Range of the I/O value:</b><br>
+	 * [false; true]
+	 *
+	 * @param value
+	 *            the value, which has to be written to the mocked digital input 'B_sick_trigger_warnfeld'
+	* 
+	 * @deprecated The output 'B_sick_trigger_warnfeld' has not been assigned to a field bus address - thus this operation will be <b>simulated</b> only.
+	 */
+	@Deprecated
+	public void setMockedB_sick_trigger_warnfeldValue(java.lang.Boolean value)
+	{
+		setMockedInput("B_sick_trigger_warnfeld", value);
 	}
 
 }

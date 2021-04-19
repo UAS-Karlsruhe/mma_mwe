@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Automatically generated IO group description. Please do NOT modify!
+-->
+<SunriseIOGroupDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0">
+  <IOGroup DisplayName="Matlab" IconName="Matlab" SignalTypes="InOut" TemplateName="Matlab">
+    <IOs>
+      <DigitalIOItem Name="Offset_Teil_mm_Y_Richtung" DataType="WORD" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Winkel_Teil_Deg" DataType="WORD" IOType="Input" UsedBitWidth="1" IsConnected="false">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Geschwindigkeit_Foerderband" DataType="WORD" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+      <DigitalIOItem Name="Offset_Teil_mm_X_Richtung" DataType="WORD" IOType="Input" UsedBitWidth="1" IsConnected="true">
+        <Description />
+      </DigitalIOItem>
+    </IOs>
+    <Description>tast
+</Description>
+  </IOGroup>
+</SunriseIOGroupDescription>

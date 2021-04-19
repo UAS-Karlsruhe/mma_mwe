@@ -6,47 +6,40 @@
   </Version>
   <WarnMultipleUsageOfInputs printWarning="false" />
   <BusList>
-    <Bus BusDriverName="PNIODriver" BusInstanceName="PNIO-CTRL">
-      <IOList>
-        <DigitalIO Name="Sick_Laser_Scanner_Front.A_sick_trigger_schutzfeld" Type="INPUT" Scope="USER_IO" StartBit="40" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-        <DigitalIO Name="Sick_Laser_Scanner_Front.A_sick_trigger_warnfeld" Type="INPUT" Scope="USER_IO" StartBit="41" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-        <DigitalIO Name="Sick_Laser_Scanner_Front.B_sick_trigger_schutzfeld" Type="INPUT" Scope="USER_IO" StartBit="42" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-        <DigitalIO Name="Sick_Laser_Scanner_Front.B_sick_trigger_warnfeld" Type="INPUT" Scope="USER_IO" StartBit="43" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-        <DigitalIO Name="Sick_laser_scanner_hinten.A_sick_trigger_schutzfeld" Type="INPUT" Scope="USER_IO" StartBit="44" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-        <DigitalIO Name="Sick_laser_scanner_hinten.A_sick_trigger_warnfeld" Type="INPUT" Scope="USER_IO" StartBit="45" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-        <DigitalIO Name="Sick_laser_scanner_hinten.B_sick_trigger_schutzfeld" Type="INPUT" Scope="USER_IO" StartBit="46" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-        <DigitalIO Name="Sick_laser_scanner_hinten.B_sick_trigger_warnfeld" Type="INPUT" Scope="USER_IO" StartBit="47" BitSize="1" Signed="false">
-          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
-        </DigitalIO>
-      </IOList>
-    </Bus>
     <Bus BusDriverName="PNIODriver" BusInstanceName="PNIO-DEV">
       <IOList>
-        <DigitalIO Name="Gripper.Isclosed" Type="INPUT" Scope="USER_IO" StartBit="144" BitSize="1" Signed="false">
-          <Description>is gripper closed</Description>
+        <DigitalIO Name="Matlab.Offset_Teil_mm_Y_Richtung" Type="INPUT" Scope="USER_IO" StartBit="184" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="Matlab.Offset_Teil_mm_X_Richtung" Type="INPUT" Scope="USER_IO" StartBit="168" BitSize="1" Signed="false">
+          <Description />
+        </DigitalIO>
+        <DigitalIO Name="Matlab.Geschwindigkeit_Foerderband" Type="INPUT" Scope="USER_IO" StartBit="152" BitSize="1" Signed="false">
+          <Description />
         </DigitalIO>
         <DigitalIO Name="Gripper.SetClose" Type="OUTPUT" Scope="USER_IO" StartBit="2320" BitSize="1" Signed="false">
           <Description>Setting the Gripper to close the claws</Description>
         </DigitalIO>
+        <DigitalIO Name="Gripper.SetOpen" Type="OUTPUT" Scope="USER_IO" StartBit="2321" BitSize="1" Signed="false">
+          <Description>Setting the Gripper to open the claws</Description>
+        </DigitalIO>
+        <DigitalIO Name="Gripper.Isclosed" Type="INPUT" Scope="USER_IO" StartBit="144" BitSize="1" Signed="false">
+          <Description>is gripper closed</Description>
+        </DigitalIO>
         <DigitalIO Name="Gripper.Isopen" Type="INPUT" Scope="USER_IO" StartBit="145" BitSize="1" Signed="false">
           <Description>is gripper open</Description>
         </DigitalIO>
-        <DigitalIO Name="Gripper.SetOpen" Type="OUTPUT" Scope="USER_IO" StartBit="2321" BitSize="1" Signed="false">
-          <Description>Setting the Gripper to open the claws</Description>
+        <DigitalIO Name="Sick_Laser_Scanner_Front.A_sick_trigger_warnfeld" Type="INPUT" Scope="USER_IO" StartBit="217" BitSize="1" Signed="false">
+          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
+        </DigitalIO>
+        <DigitalIO Name="Sick_Laser_Scanner_Front.A_sick_trigger_schutzfeld" Type="INPUT" Scope="USER_IO" StartBit="218" BitSize="1" Signed="false">
+          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
+        </DigitalIO>
+        <DigitalIO Name="Sick_laser_scanner_hinten.A_sick_trigger_warnfeld" Type="INPUT" Scope="USER_IO" StartBit="225" BitSize="1" Signed="false">
+          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
+        </DigitalIO>
+        <DigitalIO Name="Sick_laser_scanner_hinten.A_sick_trigger_schutzfeld" Type="INPUT" Scope="USER_IO" StartBit="226" BitSize="1" Signed="false">
+          <Description>True = 1 - Wenn Warnfeld betreten wurde, dann auf 1 </Description>
         </DigitalIO>
       </IOList>
     </Bus>
