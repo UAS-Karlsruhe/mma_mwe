@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IOManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version Label="">
+    <Info Version="IOManager V0.1.0" />
+    <Schema Version="1" />
+  </Version>
+  <WarnMultipleUsageOfInputs printWarning="false" />
+  <BusList>
+    <Bus BusDriverName="ECatIODriver" BusInstanceName="SYS-X48">
+      <IOList>
+        <DigitalIO Name="Gripper.Isclosed" Type="INPUT" Scope="USER_IO" StartBit="368" BitSize="1" Signed="false">
+          <Description>is gripper closed</Description>
+        </DigitalIO>
+        <DigitalIO Name="Gripper.Isopen" Type="INPUT" Scope="USER_IO" StartBit="369" BitSize="1" Signed="false">
+          <Description>is gripper open</Description>
+        </DigitalIO>
+        <DigitalIO Name="Gripper.SetClose" Type="OUTPUT" Scope="USER_IO" StartBit="12728" BitSize="1" Signed="false">
+          <Description>Setting the Gripper to close the claws</Description>
+        </DigitalIO>
+        <DigitalIO Name="Gripper.SetOpen" Type="OUTPUT" Scope="USER_IO" StartBit="12729" BitSize="1" Signed="false">
+          <Description>Setting the Gripper to open the claws</Description>
+        </DigitalIO>
+      </IOList>
+    </Bus>
+  </BusList>
+</IOManager>
